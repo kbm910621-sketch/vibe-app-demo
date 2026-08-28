@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179148630389",
+    "project_id": "aducation-sample",
+    "storage_bucket": "aducation-sample.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179148630389:android:47042144cfe6dd132c0b3c",
+        "android_client_info": {
+          "package_name": "com.example.name"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaJz6eBgm9cr8r7rlxJsJqmzKqdCb7gBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
