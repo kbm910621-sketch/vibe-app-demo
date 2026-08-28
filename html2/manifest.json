@@ -1,0 +1,21 @@
+﻿{
+  "name": "부산 전문학원 - 실무 맞춤 취업 & 자격증 전문교육",
+  "short_name": "부산전문학원",
+  "description": "부산 1위 실무 중심 취업 전문학원. 국비지원, IT개발, 디자인, 자격증 1:1 맞춤 교육",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3135/3135755.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
