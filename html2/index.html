@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>부산 전문학원 | IT·디자인·자격증 실무 1:1 취업 전문교육</title>
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="부산 대표 전문학원. 국비 100% 전액지원 코딩, UI/UX 디자인, 영상편집, 전산세무회계, 컴활 자격증 1:1 취업 멘토링">
+  <meta name="keywords" content="부산전문학원, 부산컴퓨터학원, 부산코딩학원, 부산국비학원, 서면전문학원, 센텀코딩학원">
+  
+  <!-- PWA Settings -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="부산전문학원">
+
+  <!-- Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Notice Bar -->
+  <div class="top-notice">
+    <span class="badge">모집중</span>
+    <span>2026 하반기 국비지원 100% 무료 취업과정 선착순 마감 임박!</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="bi bi-mortarboard-fill"></i></div>
+        <span>부산전문학원</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li><a href="#about" class="active">학원소개</a></li>
+        <li><a href="#courses">개설과정</a></li>
+        <li><a href="#benefits">수강혜택</a></li>
+        <li><a href="#instructors">강사진</a></li>
+        <li><a href="#reviews">취업후기</a></li>
+        <li><a href="#location">오시는길</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" title="다크/라이트 모드">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+        <a href="#consultSection" class="btn btn-primary btn-sm">
+          <i class="bi bi-telephone-fill"></i> 빠른상담
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="bi bi-award-fill"></i> 고용노동부 우수훈련기관 5년 연속 선정
+        </div>
+        <h1 class="hero-title">
+          부산에서 꿈꾸는<br>
+          <span class="highlight">실무 전문가로의 도약</span>
+        </h1>
+        <p class="hero-desc">
+          비전공자도 단기간에 실무 투입 가능한 1:1 밀착 코칭!<br>
+          국비지원 100% 전액무료부터 기업 연계 맞춤 취업 포트폴리오까지 완성합니다.
+        </p>
+        <div class="hero-buttons">
+          <a href="#courses" class="btn btn-primary btn-lg">
+            <i class="bi bi-grid-fill"></i> 교육과정 둘러보기
+          </a>
+          <a href="#subsidyCalc" class="btn btn-secondary btn-lg">
+            <i class="bi bi-calculator"></i> 국비지원금 조회
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>94.8%</h3>
+            <p>취업 성공률</p>
+          </div>
+          <div class="stat-item">
+            <h3>98.2%</h3>
+            <p>수강생 만족도</p>
+          </div>
+          <div class="stat-item">
+            <h3>12,500+</h3>
+            <p>누적 수료생</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Quick Consultation Card -->
+      <div class="hero-card" id="consultSection">
+        <div class="hero-card-header">
+          <h3><i class="bi bi-lightning-charge-fill" style="color:var(--accent);"></i> 실시간 무료 맞춤상담</h3>
+          <p>수강료 최대 100% 지원 여부 및 커리큘럼 1분 조회</p>
+        </div>
+        <form class="quick-form" id="consultForm">
+          <div class="form-group">
+            <label for="consultName">이름</label>
+            <input type="text" id="consultName" class="form-input" placeholder="홍길동" required>
+          </div>
+          <div class="form-group">
+            <label for="consultPhone">연락처</label>
+            <input type="tel" id="consultPhone" class="form-input" placeholder="010-1234-5678" required>
+          </div>
+          <div class="form-group">
+            <label for="consultCourse">관심 과정</label>
+            <select id="consultCourse" class="form-select">
+              <option value="풀스택 웹 & 클라우드 개발">풀스택 웹 & 클라우드 개발자 (국비100%)</option>
+              <option value="생성형 AI & 파이썬 데이터">생성형 AI & 파이썬 데이터 분석</option>
+              <option value="UI/UX 웹디자인 & 피그마">UI/UX 웹디자인 & 피그마 포트폴리오</option>
+              <option value="모션그래픽 & 영상편집">모션그래픽 & 유튜브 영상편집</option>
+              <option value="전산세무회계 종합">전산세무회계 종합 자격증</option>
+              <option value="컴활 1/2급 단기속성">컴활 1/2급 단기 합격반</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="consultCampus">희망 캠퍼스</label>
+            <select id="consultCampus" class="form-select">
+              <option value="서면">서면 본원 캠퍼스</option>
+              <option value="센텀">센텀시티 AI/IT 캠퍼스</option>
+            </select>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="consultAgree" checked required>
+            <label for="consultAgree">개인정보 수집 및 상담 연락에 동의합니다.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 6px;">
+            <i class="bi bi-send-fill"></i> 무료 상담 신청하기
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="section section-alt" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Curriculum</span>
+        <h2 class="section-title">부산 전문학원 핵심 개설 과정</h2>
+        <p class="section-desc">기초부터 탄탄한 실무 프로젝트까지, 부산 대표 강사진이 직접 지도합니다.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">전체 과정</button>
+        <button class="filter-btn" data-filter="it">💻 IT·코딩·AI</button>
+        <button class="filter-btn" data-filter="design">🎨 디자인·영상</button>
+        <button class="filter-btn" data-filter="cert">📊 세무회계·자격증</button>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="course-grid" id="courseContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Busan Academy (Features) -->
+  <section class="section" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Busan Academy</span>
+        <h2 class="section-title">왜 부산 전문학원을 선택해야 할까요?</h2>
+        <p class="section-desc">차별화된 교육 시스템으로 비전공자도 취업까지 확실하게 지원합니다.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-person-check-fill"></i></div>
+          <h4>1:1 전담 멘토링</h4>
+          <p>전담 취업 컨설턴트와 기술 멘토가 이력서 첨삭, 모의면접, 포트폴리오를 밀착 코칭합니다.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-buildings-fill"></i></div>
+          <h4>부산 산학협력 네트워크</h4>
+          <p>부산 테크노파크, 센텀IT밸리, 주요 금융/공기업 등 200여 개 협력사 취업 연계 지원</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-laptop-fill"></i></div>
+          <h4>24시간 실습실 개방</h4>
+          <p>최신 고사양 PC 랩실과 카페형 스터디 라운지를 수강생에게 상시 무료 제공합니다.</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon"><i class="bi bi-cash-coin"></i></div>
+          <h4>국비 100% 무료 + 수당</h4>
+          <p>국민내일배움카드로 교육비 전액 지원 및 매월 훈련장려금(최대 31.6만원) 지급</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tuition & Subsidy Calculator -->
+  <section class="section section-alt" id="subsidyCalc">
+    <div class="container">
+      <div class="calc-card">
+        <div class="calc-grid">
+          <div>
+            <span class="section-tag">Subsidy Calculator</span>
+            <h3 style="font-size: 1.7rem; font-weight: 800; margin-bottom: 12px;">나의 국비지원 예상 혜택 계산기</h3>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">내 현재 조건에 맞는 국비 지원금 및 수강 혜택을 1초 만에 확인해보세요.</p>
+            
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="calcUserType">현재 본인의 상태를 선택해주세요</label>
+              <select id="calcUserType" class="form-select" onchange="calculateSubsidy()">
+                <option value="unemployed">구직자 / 졸업예정자 / 대학생(3,4학년)</option>
+                <option value="national">국민취업지원제도 참여자</option>
+                <option value="worker">직장인 / 재직자 / 이직준비생</option>
+                <option value="general">일반 수강 (자격증 단기)</option>
+              </select>
+            </div>
+            
+            <button class="btn btn-primary" onclick="calculateSubsidy()">
+              <i class="bi bi-search"></i> 국비 지원 혜택 계산하기
+            </button>
+          </div>
+
+          <div class="calc-result-box">
+            <div class="calc-result-title">예상 본인 부담금</div>
+            <div class="calc-price" id="calcPriceResult">0원 <span style="font-size:1rem; font-weight:normal;">(100% 전액 지원)</span></div>
+            <p id="calcDescResult" style="font-size:0.9rem; color:var(--text-sub); margin-bottom:18px;">
+              국민내일배움카드 + K-Digital 지원으로 자부담금 0원 & 훈련장려금 월 최대 316,000원 지급!
+            </p>
+            <ul class="calc-benefits">
+              <li><i class="bi bi-check-circle-fill"></i> 교재 및 학습 소프트웨어 전액 무상 지원</li>
+              <li><i class="bi bi-check-circle-fill"></i> 실전 포트폴리오 1:1 무제한 피드백</li>
+              <li><i class="bi bi-check-circle-fill"></i> 수료 후 6개월간 취업 매칭 사후 관리</li>
+            </ul>
+            <a href="#consultSection" class="btn btn-accent btn-sm" style="width: 100%;">
+              국비카드 발급 가이드 신청
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructors -->
+  <section class="section" id="instructors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Top Instructors</span>
+        <h2 class="section-title">분야별 최고 실무 강사진</h2>
+        <p class="section-desc">현업 10년 이상 실무 경력과 노하우를 아낌없이 전수합니다.</p>
+      </div>
+
+      <div class="instructor-grid">
+        <div class="instructor-card">
+          <div class="instructor-avatar">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="김서연 강사">
+          </div>
+          <h4 class="instructor-name">김서연 수석강사</h4>
+          <p class="instructor-role">IT·풀스택 개발 대표</p>
+          <p class="instructor-desc">전 네이버 라인 소프트웨어 엔지니어 / 10년차 풀스택 아키텍트 직강</p>
+        </div>
+
+        <div class="instructor-card">
+          <div class="instructor-avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="박준혁 강사">
+          </div>
+          <h4 class="instructor-name">박준혁 디렉터</h4>
+          <p class="instructor-role">UI/UX & 브랜딩 디렉터</p>
+          <p class="instructor-desc">카카오 UX 디자이너 출신 / 부산 벡스코 디자인 어워드 심사위원</p>
+        </div>
+
+        <div class="instructor-card">
+          <div class="instructor-avatar">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="이민지 세무사">
+          </div>
+          <h4 class="instructor-name">이민지 공인세무사</h4>
+          <p class="instructor-role">세무·회계·경영 직강</p>
+          <p class="instructor-desc">현 세무법인 대표 세무사 / 전산세무 1급 단기 합격 전문 지도</p>
+        </div>
+
+        <div class="instructor-card">
+          <div class="instructor-avatar">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="최동훈 감독">
+          </div>
+          <h4 class="instructor-name">최동훈 모션 디렉터</h4>
+          <p class="instructor-role">영상·모션그래픽</p>
+          <p class="instructor-desc">부산국제영화제(BIFF) 공식 영상 편집 및 CF 모션그래픽 12년 경력</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews & Success Stories -->
+  <section class="section section-alt" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Success Stories</span>
+        <h2 class="section-title">수강생 취업 및 합격 후기</h2>
+        <p class="section-desc">부산 전문학원을 통해 새로운 커리어를 시작한 분들의 생생한 이야기입니다.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">"인문계 비전공자로 코딩에 겁이 많았는데, 강사님의 1:1 코드 리뷰 덕분에 6개월 만에 센텀 IT 기업 백엔드 개발자로 취업했습니다!"</p>
+          </div>
+          <div class="review-author">
+            <div class="author-info">
+              <h5>정○우 수료생</h5>
+              <span>풀스택 14기 수료</span>
+            </div>
+            <div class="company-badge">센텀IT기업 합격</div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">"포트폴리오의 퀄리티 자체가 다릅니다. 디자인 실무 감각과 피그마 실무 프로세스를 제대로 배워서 원하던 브랜드 에이전시에 입사했습니다."</p>
+          </div>
+          <div class="review-author">
+            <div class="author-info">
+              <h5>한○지 수료생</h5>
+              <span>UI/UX 9기 수료</span>
+            </div>
+            <div class="company-badge">디자인 에이전시</div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">"전산세무 2급과 컴활 1급을 2달 만에 동시에 취득하고 부산 공공기관 계약직에서 정규직 회계팀으로 이직에 성공했습니다!"</p>
+          </div>
+          <div class="review-author">
+            <div class="author-info">
+              <h5>김○진 수료생</h5>
+              <span>세무회계 종합반</span>
+            </div>
+            <div class="company-badge">부산 공공기관 취업</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Campus Section -->
+  <section class="section" id="location">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Campus Map</span>
+        <h2 class="section-title">오시는 길 & 캠퍼스 안내</h2>
+        <p class="section-desc">부산 중심지 서면과 센텀시티에서 편리한 대중교통으로 만나보세요.</p>
+      </div>
+
+      <div class="location-tabs">
+        <button class="campus-btn active" data-campus="seomyeon">서면 본원 캠퍼스</button>
+        <button class="campus-btn" data-campus="centum">센텀시티 캠퍼스</button>
+      </div>
+
+      <div class="campus-card">
+        <div class="map-embed">
+          <iframe 
+            title="캠퍼스 위치 지도"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.7335198086053!2d129.05739837682205!3d35.1633519727581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ecda7a6ef5a5%3A0x67ee1c7baee5ec1b!2z7ISc66m07Jet!5e0!3m2!1sko!2skr!4v1700000000000!5m2!1sko!2skr"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="campus-details">
+          <h4 style="font-size:1.35rem; font-weight:800; color:var(--primary);" id="campusTitle">부산 서면 본원 캠퍼스</h4>
+          
+          <div class="campus-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <h5>주소</h5>
+              <p id="campusAddr">부산광역시 부산진구 중앙대로 700 (서면역 2번 출구 도보 2분)</p>
+            </div>
+          </div>
+
+          <div class="campus-item">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+              <h5>대표전화</h5>
+              <p id="campusTel">051-800-1000</p>
+            </div>
+          </div>
+
+          <div class="campus-item">
+            <i class="bi bi-train-front-fill"></i>
+            <div>
+              <h5>지하철 이용</h5>
+              <p id="campusSubway">부산지하철 1·2호선 서면역 환승역 지하 연결통로 이용 가능</p>
+            </div>
+          </div>
+
+          <div class="campus-item">
+            <i class="bi bi-clock-fill"></i>
+            <div>
+              <h5>상담 운영시간</h5>
+              <p>평일 09:00 ~ 21:00 / 토·일 10:00 ~ 17:00 (연중무휴 상담)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>부산전문학원 (Busan Pro Academy)</h4>
+          <p>부산광역시 대표 실무 중심 전문인재 양성기관<br>고용노동부 직업능력개발 훈련기관 인증</p>
+          <p style="font-size:0.8rem; color:#64748b;">사업자등록번호: 602-81-XXXXX | 통신판매업신고: 제2026-부산진구-XXXX호<br>대표자: 부산전문학원 원장 | 개인정보관리책임자: 교육기획팀</p>
+        </div>
+        <div class="footer-links">
+          <h5>주요 교육과정</h5>
+          <ul>
+            <li><a href="#courses">풀스택 웹개발 (국비무료)</a></li>
+            <li><a href="#courses">생성형 AI & 데이터분석</a></li>
+            <li><a href="#courses">UI/UX 웹디자인 & 피그마</a></li>
+            <li><a href="#courses">전산세무회계 & 컴활</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>고객센터</h5>
+          <ul>
+            <li><strong style="color:white; font-size:1.1rem;">051-800-1000</strong></li>
+            <li>카카오톡 플러스친구: @부산전문학원</li>
+            <li>이메일: contact@busanacademy.co.kr</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 부산전문학원 All rights reserved. Designed for Next-Gen WebApp.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="fab-container">
+    <a href="tel:051-800-1000" class="fab-btn fab-call" title="전화 상담">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+    <a href="https://pf.kakao.com" target="_blank" class="fab-btn fab-kakao" title="카카오톡 상담">
+      <i class="bi bi-chat-fill"></i>
+    </a>
+    <button class="fab-btn fab-top" id="fabTop" title="맨 위로">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Bottom WebApp Navigation Bar -->
+  <nav class="bottom-nav">
+    <a href="#about" class="bottom-nav-item active">
+      <i class="bi bi-house-door-fill"></i>
+      <span>홈</span>
+    </a>
+    <a href="#courses" class="bottom-nav-item">
+      <i class="bi bi-grid-fill"></i>
+      <span>과정</span>
+    </a>
+    <a href="#consultSection" class="bottom-nav-item highlight">
+      <i class="bi bi-pencil-square"></i>
+      <span>상담신청</span>
+    </a>
+    <a href="#reviews" class="bottom-nav-item">
+      <i class="bi bi-chat-quote-fill"></i>
+      <span>후기</span>
+    </a>
+    <a href="#location" class="bottom-nav-item">
+      <i class="bi bi-geo-alt-fill"></i>
+      <span>위치</span>
+    </a>
+  </nav>
+
+  <!-- Modal Component -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3 id="modalTitle" style="font-size: 1.3rem; margin-bottom: 16px; font-weight:800;"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
